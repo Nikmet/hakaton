@@ -1,0 +1,20 @@
+@import "../../index";
+
+.table__head {
+    display: flex;
+    font-size: 14px;
+    background-color: $main;
+    color: $dark;
+    font-weight: 700;
+
+    &-item {
+        border: 1px solid $dark;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+
+        &:not(:last-child) {
+            border-right: none;
+        }
+    }
+}

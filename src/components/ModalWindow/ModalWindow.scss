@@ -1,0 +1,95 @@
+@import "../../index";
+
+.modal-window__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100vh;
+    background-color: #63636394;
+    width: 100%;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-window__wrapper {
+    width: 1000px;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.modal-window__data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.modal-window__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 3;
+    width: 20px;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.modal-window__map {
+    height: 300px;
+    width: 500px;
+    background-color: #a8a8a8;
+}
+
+.modal-window__data-right {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    width: 400px;
+    gap: 10px;
+
+    h2 {
+        grid-column: span 2;
+        color: $dark_main;
+    }
+
+    input {
+        height: 30px;
+    }
+
+    textarea {
+        resize: none;
+    }
+}
+
+.modal-window__action-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.modal-window__action {
+    padding: 10px 40px;
+    background-color: $main;
+    color: $dark;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
